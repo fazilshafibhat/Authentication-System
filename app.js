@@ -21,7 +21,7 @@ app.use(cookieParser())
 app.use(express.urlencoded({extended:false}));
 
 
-app.use('/signup', signUp)
+app.use('/', signUp)
 app.use('/signin', signIn)
 app.use('/signout', signOut)
 app.use('/home', home)
